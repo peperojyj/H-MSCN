@@ -5,8 +5,9 @@
 본 프로젝트는 SQL Cardinality Estimation을 위한 MSCN (Multi-Set Convolutional Network) 모델을 재현하고,
 이를 기반으로 Attention 메커니즘을 추가하여 확장한 프로젝트입니다.
 
+
 MSCN은 SQL 쿼리를 tables, joins, predicates의 집합(set)으로 표현하고,
-각 집합을 MLP 기반으로 처리하여 결과 cardinality를 예측하는 모델입니다.
+각 집합을 독립적으로 encoding한 뒤 MLP 기반으로 처리하여 결과 cardinality를 예측하는 모델입니다.
 
 ---
 
